@@ -9,16 +9,16 @@ The user also has the option of saving an article to the database, add notes, an
 
 ## Image Demo
 #### Home Screen
-![alt text](./public/assets/images/demo/home.png)
+![Home](https://github.com/Bangarng/MongoScraper/blob/master/public/assets/images/demo/home.PNG)
 
 #### Scraper Screen
-![alt text](./public/assets/images/demo/scrape.png)
+![Scraper](./public/assets/images/demo/scrape.png)
 
 #### Saved Articles Screen
-![alt text](./public/assets/images/demo/saved.png)
+![Saved](./public/assets/images/demo/saved.png)
 
 #### Note Screen
-![alt text](./public/assets/images/demo/note.png)
+![Note](./public/assets/images/demo/note.png)
 
 ## Deployment
 
