@@ -1,0 +1,3 @@
+
+URI string for mongo:
+mongodb://heroku_6qwnq0tj:smpei6n9m46kgldfuen9lhau0r@ds141514.mlab.com:41514/heroku_6qwnq0tj

@@ -1,0 +1,70 @@
+{{!-- Nav --}}
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <a class="navbar-brand" href="/">GoComics Mongo Scraper</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/">Home | <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/savedarticles">Saved Articles  |</a>
+      <form action="/scrape" method="POST" class="navbar-form navbar-left">
+        <button type="submit" class="btn btn-default scrape-btn">SCRAPE NEW ARTICLES!</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="/savedarticles">Saved Articles</a></li>
+      </ul>
+      <form action="/scrape" method="POST" class="navbar-form navbar-left">
+        <button type="submit" class="btn btn-default">SCRAPE NEW ARTICLES!</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--End navigation-->
+
+<!-- Main container -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron">
+        <h1>GoComics Mongo Scraper</h1>
+        <p>Scrape Comics and Articles from your favorite Comic Site!</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{#each articles}}
+        <div class="panel panel-primary">
+          <div class="panel-heading row">
+            <div class="col-xs-9">
+              <h3 class="panel-title pull-left">{{this.title}}</h3>
+              <img class="article-picture" type="hidden" name="picture" src={{this.picture}} width="200" height="250px"/>
+            </div>
+            <div class="col-xs-3">
+              <form action="/save" method="POST">
+                <input id="article-title" type="hidden" name="title" value="{{this.title}}">
+                <input id="article-link" type="hidden" name="link" value={{this.link}}>
+                <button type="submit" class="btn btn-default pull-right">SAVE ARTICLE</button>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12>">
+              <div class="panel-body">
+                <a id="article-link" href="https://www.gocomics.com{{this.link}}">https://www.gocomics.com{{this.link}}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

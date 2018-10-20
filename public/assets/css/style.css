@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Crete+Round|Permanent+Marker');
+
+body {
+    background-color: #5D8FB1;
+}
+
+html {
+	font-size: 12px;
+}
+
+li { 
+    margin-bottom: 1%;
+}
+
+p {
+	font-size: 16px;
+	margin-left: 1%;
+	margin-top: 1%;
+}
+
+#bodyinput {
+    width: 50%;
+}
+
+.jumbotron {
+    margin-top: 1%;
+	overflow: hidden;
+    /*background-size: 50%;*/
+    background-position: center;
+    background-image: url('../images/goComics.png');
+    background-repeat: no-repeat;
+    background-color: #e9ebee;
+    height: 375px;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+
+}
+
+.jumbotron h1 {
+    margin-top: 4%;
+    line-height: 2em;
+    font-size: 1.7em;
+    text-shadow: 2px 3px 1px #B3A2BF;
+}
+
+.jumbotron p {
+    font-size: 1.2em;
+    text-shadow: 2px 3px 1px #B3A2BF;
+}
+
+.panel-heading.row {
+	width: 100%;
+    margin-left: 0%;
+}
+
+.panel-primary {
+    height: 135px;
+}
+
+#savenote {
+    display: block;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-family: 'Crete Round', serif;
+}
+
+.nav-item {
+    font-size: 1.3em;
+    font-family: 'Crete Round', serif;
+    transition: .2s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #5B8FB1 !important;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #5B8FB1;
+    color: white;
+}
+
+.btn {
+    background-color: white;
+    font-family: 'Crete Round', serif;
+    margin-left: 10px;
+    margin-top: -3px;
+    border: 2px solid #5B8FB1;
+    transition: .4s ease-in-out;
+}
+
+.scrape-btn {
+    margin-top: 3px;
+    /* font-weight: bold; */
+    transition: .4s ease-in-out;
+}
+
+.scrape-btn:hover {
+    background: #5B8FB1;
+    color: white;
+}
+
+.panel-primary {
+    min-height: 345px;
+    padding: 20px;
+    background:rgba(255,255,255, 0.75);
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.panel-body {
+    font-size: 1.5em;
+    padding: 5px 15px;
+}
+
+.article-picture {
+    border-radius: 3px;
+}
+
+.modal-content {
+    background: #5D8FB1;
+}
+
+.modal-body {
+    background: white;
+}
+
+.modal-header {
+    justify-content: flex-start !important;
+}
+
+.modal-header .close {
+    padding: 0; 
+    margin: 0;
+}
+
+#savenote {
+    margin-top: 3px;
+    /* font-weight: bold; */
+    transition: .4s ease-in-out;
+}
+
+#savenote:hover {
+    background: #5B8FB1;
+    color: white;
+}
