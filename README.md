@@ -12,14 +12,13 @@ The user also has the option of saving an article to the database, add notes, an
 ![Home](https://github.com/Bangarng/MongoScraper/blob/master/public/assets/images/demo/home.PNG)
 
 #### Scraper Screen
-![Scraper](./public/assets/images/demo/scrape.png)
+![Scraper](https://github.com/Bangarng/MongoScraper/blob/master/public/assets/images/demo/scrape.PNG)
 
 #### Saved Articles Screen
-![Saved](./public/assets/images/demo/saved.png)
+![Saved](https://github.com/Bangarng/MongoScraper/blob/master/public/assets/images/demo/saved.PNG)
 
 #### Note Screen
-![Note](./public/assets/images/demo/note.png)
+![Note](https://github.com/Bangarng/MongoScraper/blob/master/public/assets/images/demo/note.PNG)
 
 ## Deployment
-
-[Heroku Deployment found here](https://go-comics-mongo-scraper.herokuapp.com/).
+[Heroku Deployment](https://go-comics-mongo-scraper.herokuapp.com/).
